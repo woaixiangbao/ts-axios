@@ -47,7 +47,7 @@ router.post('/base/buffer', function(req, res){
   let msg = []
   req.on('data', (chunk) => {
     if(chunk) {
-      mag.push(chunk)
+      msg.push(chunk)
     }
   })
   req.on('end', () => {
