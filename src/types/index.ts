@@ -82,3 +82,7 @@ export interface RejectedFn {
 export interface AxiosTransformer {
   (data: any, headers?: any): any
 }
+
+export interface AxiosStatic extends AxiosInstance {
+  create(config?: AxiosRequestConfig): AxiosInstance
+}
